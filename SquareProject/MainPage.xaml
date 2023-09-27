@@ -14,7 +14,12 @@
 
             <Label Text="A négyzet oldala:"/>
             <Entry Text="{Binding Side, Mode=TwoWay}"/>
-
+            <Label Margin="10,0,0,0" Text="Eredmény:" />
+            <HorizontalStackLayout Margin="0,5,2,5">
+                <Label Text="Kerület: " />
+                <Label Text="{Binding Perimeter}" />
+            </HorizontalStackLayout>
+            
         </VerticalStackLayout>
     </ScrollView>
 
