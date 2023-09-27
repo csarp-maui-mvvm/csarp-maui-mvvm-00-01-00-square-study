@@ -19,7 +19,10 @@
                 <Label Text="Kerület: " />
                 <Label Text="{Binding Perimeter}" />
             </HorizontalStackLayout>
-            
+            <HorizontalStackLayout Margin="2,5,2,5">
+                <Label Text="Terület: " />
+                <Label Text="{Binding Area}" />
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 
