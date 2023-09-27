@@ -1,10 +1,14 @@
-﻿using System.Reflection.Metadata;
+﻿using System.ComponentModel;
+using System.Reflection.Metadata;
 
 namespace SquareProject.Models
 {
-    public class Square
+    public class Square : INotifyPropertyChanged
     {
         private double _side;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
         public double Side
         {
             get => _side;
@@ -47,6 +51,16 @@ namespace SquareProject.Models
         public override string ToString()
         {
             return AllProperty;
+        }
+
+        /// <summary>
+        /// Megírjuk az interface szükséges metódusát. Mindig ezt kell írni
+        /// </summary>
+        /// <param name="property"></param>
+        private void OnPropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
         }
     }
 }

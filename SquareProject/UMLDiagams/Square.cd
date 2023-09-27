@@ -3,9 +3,10 @@
   <Class Name="SquareProject.Models.Square">
     <Position X="2.75" Y="1.75" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAQAAgAAEACAAAAAAAAAAAAAACAAAAQAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAQAAgAAEICAAAAAAgAAAAAAACAAAAQAAAAA=</HashCode>
       <FileName>Models\Square.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
