@@ -23,6 +23,8 @@
                 <Label Text="Terület: " />
                 <Label Text="{Binding Area}" />
             </HorizontalStackLayout>
+            <Label Text="Összegzés:" />
+            <Label Text="{Binding AllProperty}" />
         </VerticalStackLayout>
     </ScrollView>
 
