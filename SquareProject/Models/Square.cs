@@ -16,6 +16,10 @@ namespace SquareProject.Models
                 }
             }
         }
+        public Square()
+        {
+            _side = 1;
+        }
 
         public Square(double side)
         {
