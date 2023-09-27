@@ -17,6 +17,10 @@ namespace SquareProject.Models
                 if (value > 0)
                 {
                     _side = value;
+                    OnPropertyChanged(nameof(Side));
+                    OnPropertyChanged(nameof(Perimeter));
+                    OnPropertyChanged(nameof(Area));
+                    OnPropertyChanged(nameof(AllProperty));
                 }
             }
         }
